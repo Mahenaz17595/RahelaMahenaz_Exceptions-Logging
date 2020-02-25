@@ -5,16 +5,11 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.FileDescriptor;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
-
 public class Construction {
 	private static final Logger LOGGER =  LogManager.getLogger(Construction.class);
 
 	public static void CostCalculation() {
 		Scanner sc= new Scanner(System.in);
-		PrintStream p=new PrintStream(new FileOutputStream(FileDescriptor.out));
 		//LOGGER.error();
 		LOGGER.error("CONSTRUCTION COST ESTIMATION");
 		//LOGGER.error();
