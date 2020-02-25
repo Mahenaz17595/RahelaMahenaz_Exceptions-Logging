@@ -1,52 +1,52 @@
 package com.epam;
 
 import java.util.Scanner;
+import java.util.logging.Logger;
+
 
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class Construction {
-	private static final Logger LOGGER =  LogManager.getLogger(Construction.class);
 
 	public static void CostCalculation() {
+		Logger LOGGER  = Logger.getLogger(Construction.class.getName()); 
+
 		Scanner sc= new Scanner(System.in);
-		//LOGGER.error();
-		LOGGER.error("CONSTRUCTION COST ESTIMATION");
-		//LOGGER.error();
-		LOGGER.error("Variants Available");
-		LOGGER.error("1. Construction with standard materials");
-		LOGGER.error("2. Construction with above standard materials");
-		LOGGER.error("3. Construction with high standard materials");
-		LOGGER.error("4. Construction with high standard materials and fully automated");
-		LOGGER.error("Enter your choice: ");
+		LOGGER.info("CONSTRUCTION COST ESTIMATION");
+		LOGGER.info("Variants Available");
+		LOGGER.info("1. Construction with standard materials");
+		LOGGER.info("2. Construction with above standard materials");
+		LOGGER.info("3. Construction with high standard materials");
+		LOGGER.info("4. Construction with high standard materials and fully automated");
+		LOGGER.info("Enter your choice: ");
 		try {
 		int ch=sc.nextInt();
 		switch(ch)
 		{
 		case 1:
-		LOGGER.error("Enter the area of house: ");
-		LOGGER.error("Cost ="+sc.nextDouble()*1200 +" INR");
+		LOGGER.info("Enter the area of house: ");
+		LOGGER.info("Cost ="+sc.nextDouble()*1200 +" INR");
 		break;
 		case 2:
-		LOGGER.error("Enter the area of house: ");
-		LOGGER.error("Cost ="+sc.nextDouble()*1500 +" INR");
+		LOGGER.info("Enter the area of house: ");
+		LOGGER.info("Cost ="+sc.nextDouble()*1500 +" INR");
 		break;
 		case 3:
-		LOGGER.error("Enter the area of house: ");
-		LOGGER.error("Cost ="+sc.nextDouble()*1800 +" INR");
+		LOGGER.info("Enter the area of house: ");
+		LOGGER.info("Cost ="+sc.nextDouble()*1800 +" INR");
 		break;
 		case 4:
-		LOGGER.error("Enter the area of house: ");
-		LOGGER.error("Cost ="+sc.nextDouble()*2500 +" INR");
+		LOGGER.info("Enter the area of house: ");
+		LOGGER.info("Cost ="+sc.nextDouble()*2500 +" INR");
 		break;
 		default:
-		LOGGER.error("Enter a valid input ... ");
+		LOGGER.info("Enter a valid input ... ");
 
 		}}
 
 		catch (Exception e) {
 
-		LOGGER.error("Enter a valid input ... ");
+		LOGGER.info("Enter a valid input ... ");
 
 		}
 		sc.close();
